@@ -4,6 +4,8 @@ require 'sinatra/base'
 
 class Battle < Sinatra::Base
   enable :sessions
+  set :session_secret, 'super secret'
+
 
   get '/' do
     erb :index
